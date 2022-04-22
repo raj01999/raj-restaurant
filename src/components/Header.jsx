@@ -74,30 +74,34 @@ const Header = () => {
             exit={{ opacity: 0, x: 200 }}
             className="flex items-center gap-8"
           >
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              <a href="#home">Home</a>
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              <a href="#menu">Menu</a>
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              <a
-                href="https://github.com/raj01999"
-                target="_blank"
-                rel="noreferrer"
-              >
-                About
-              </a>
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              <a
-                href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Service
-              </a>
-            </li>
+            <a
+              className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"
+              href="#home"
+            >
+              Home
+            </a>
+            <a
+              className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"
+              href="#menu"
+            >
+              Menu
+            </a>
+            <a
+              className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"
+              href="https://github.com/raj01999"
+              target="_blank"
+              rel="noreferrer"
+            >
+              About
+            </a>
+            <a
+              className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"
+              href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Service
+            </a>
           </motion.ul>
 
           {/* Cart basket for shop list {Desktop and Tablet} */}
@@ -217,50 +221,46 @@ const Header = () => {
               )}
 
               <ul className="flex flex-col">
-                <li
+                <a
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
+                  href="#home"
                   onClick={() => {
                     setIsMenu(false);
                   }}
                 >
-                  <a href="#home">Home</a>
-                </li>
-                <li
+                  Home
+                </a>
+                <a
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
+                  href="#menu"
                   onClick={() => {
                     setIsMenu(false);
                   }}
                 >
-                  <a href="#menu">Menu</a>
-                </li>
-                <li
+                  Menu
+                </a>
+                <a
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
                   onClick={() => {
                     setIsMenu(false);
                   }}
+                  href="https://github.com/raj01999"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <a
-                    href="https://github.com/raj01999"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    About
-                  </a>
-                </li>
-                <li
+                  About
+                </a>
+                <a
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
                   onClick={() => {
                     setIsMenu(false);
                   }}
+                  href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <a
-                    href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Service
-                  </a>
-                </li>
+                  Service
+                </a>
               </ul>
 
               <p

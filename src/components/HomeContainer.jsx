@@ -35,12 +35,13 @@ const HomeContainer = () => {
           to keep food moving through your digestive system.
         </p>
 
-        <button
+        <a
           type="button"
-          className="bg-gradient-to-br from-orange-400 to-orange-500 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="bg-gradient-to-br from-orange-400 to-orange-500 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100 flex justify-center items-center"
+          href="#menu"
         >
-          <a href="#menu">Order Now</a>
-        </button>
+          Order Now
+        </a>
       </div>
       <div className="py-2 flex-1 flex items-center relative">
         <img
