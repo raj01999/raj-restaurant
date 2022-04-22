@@ -5,9 +5,9 @@ import "./index.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App";
-import { StateProvider } from "./contaxt/StateProvider";
-import { initialState } from "./contaxt/initialState";
-import reducer from "./contaxt/reducer";
+import { StateProvider } from "./context/StateProvider";
+import { initialState } from "./context/initialState";
+import reducer from "./context/reducer";
 
 ReactDom.createRoot(document.getElementById("root")).render(
   <Router>
