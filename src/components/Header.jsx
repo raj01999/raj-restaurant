@@ -75,16 +75,28 @@ const Header = () => {
             className="flex items-center gap-8"
           >
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Home
+              <a href="#home">Home</a>
             </li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Menu
+              <a href="#menu">Menu</a>
             </li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              About
+              <a
+                href="https://github.com/raj01999"
+                target="_blank"
+                rel="noreferrer"
+              >
+                About
+              </a>
             </li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Service
+              <a
+                href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Service
+              </a>
             </li>
           </motion.ul>
 
@@ -211,7 +223,7 @@ const Header = () => {
                     setIsMenu(false);
                   }}
                 >
-                  Home
+                  <a href="#home">Home</a>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
@@ -219,7 +231,7 @@ const Header = () => {
                     setIsMenu(false);
                   }}
                 >
-                  Menu
+                  <a href="#menu">Menu</a>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
@@ -227,7 +239,13 @@ const Header = () => {
                     setIsMenu(false);
                   }}
                 >
-                  About
+                  <a
+                    href="https://github.com/raj01999"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    About
+                  </a>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2"
@@ -235,7 +253,13 @@ const Header = () => {
                     setIsMenu(false);
                   }}
                 >
-                  Service
+                  <a
+                    href="https://www.linkedin.com/in/sarafraj-mallick-a7a117223/details/skills/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Service
+                  </a>
                 </li>
               </ul>
 
