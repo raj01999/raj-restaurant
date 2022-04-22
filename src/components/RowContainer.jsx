@@ -13,7 +13,11 @@ const RowContainer = ({ flag, data, scrollValue }) => {
   const [{ cartItems }, dispatch] = useStateValue();
 
   useEffect(() => {
-    rowContainer.current.scrollLeft += scrollValue;
+    if (scrollValue > 0) {
+      rowContainer.current.scrollLeft += 250;
+    } else {
+      rowContainer.current.scrollLeft -= 250;
+    }
   }, [scrollValue]);
 
   useEffect(() => {
