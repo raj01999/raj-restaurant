@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
+import { MdAdd, MdLogout } from "react-icons/md";
+import { GiShoppingCart } from "react-icons/gi";
 import { motion } from "framer-motion";
 import Logo from "../img/logo.png";
 import Avatar from "../img/avatar.png";
@@ -109,7 +110,7 @@ const Header = () => {
             className="relative flex items-center justify-center"
             onClick={showCart}
           >
-            <MdShoppingBasket className="text-textColor text-2xl cursor-pointer" />
+            <GiShoppingCart className="text-textColor text-2xl cursor-pointer" />
 
             {cartItems && cartItems.length > 0 && (
               <div className="w-5 h-5  rounded-full bg-cartNumBg flex items-center justify-center absolute -top-2 -right-2 ">
@@ -169,7 +170,7 @@ const Header = () => {
           className="relative flex items-center justify-center"
           onClick={showCart}
         >
-          <MdShoppingBasket className="text-textColor text-2xl cursor-pointer" />
+          <GiShoppingCart className="text-textColor text-2xl cursor-pointer" />
 
           {cartItems && cartItems.length > 0 && (
             <div className="w-5 h-5  rounded-full bg-cartNumBg flex items-center justify-center absolute -top-2 -right-2 ">
