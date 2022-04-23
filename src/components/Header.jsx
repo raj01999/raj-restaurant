@@ -122,13 +122,12 @@ const Header = () => {
           </div>
 
           {/* User login and user place  */}
-          <div className="relative">
+          <div className="relative" onClick={logIn}>
             <motion.img
               whileTap={{ scale: 0.6 }}
               src={user ? user.photoURL : Avatar}
               alt="user"
               className="w-9 min-w-[40px] h-9 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-              onClick={logIn}
             />
 
             {isMenu && (
@@ -192,13 +191,12 @@ const Header = () => {
           </p>
         </Link>
 
-        <div className="relative">
+        <div className="relative" onClick={logIn}>
           <motion.img
             whileTap={{ scale: 0.6 }}
             src={user ? user.photoURL : Avatar}
             alt="user"
             className="w-9 min-w-[40px] h-9 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-            onClick={logIn}
           />
 
           {isMenu && (

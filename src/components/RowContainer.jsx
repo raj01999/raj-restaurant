@@ -37,7 +37,9 @@ const RowContainer = ({ flag, data, scrollValue }) => {
       }`}
     >
       {data && data.length > 0 ? (
-        data.map((item) => <Item item={item} setItems={setItems} />)
+        data.map((item) => (
+          <Item key={item?.id} item={item} setItems={setItems} />
+        ))
       ) : (
         <div className="w-full flex flex-col items-center justify-center">
           <img src={NotFound} className="h-340" alt="Not Found" />
